@@ -11,3 +11,5 @@ app.get('/', function(req, res){
 app.listen(app.set('port'), function(){
     console.log("Listening on Port: " + app.get('port'));
 });
+
+app.use(express.static(__dirname + '/public'));
